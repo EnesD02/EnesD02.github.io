@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <title>Git Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+<div id="home" class="starthome mx-auto my-auto">
+    <div id="terug" class="terug invis teruga"><p><i class="fa-solid fa-arrow-left"></i>Terug</p></div>    
+    <div id="uitleg" class="een box-text mx-auto origa a">
+        <div class="fakenav">
+        <div class="infakenav my-auto mx-auto"></div>   
+    </div>
+        <h1 class="pop uitlegh1" id="uitlegh1">Git Uitleg</h1>
+    <div class="uitlegtext invis">
+        <p>
+            In deze tutorial wil ik je graag uitleggen hoe je met Git kan omgaan met behulp van de <b>GIT GUI</b>.
+            <br><br>
+            In simpele termen is Git een versiebeheersysteem. Dit betekent dat het een programma is dat wordt gebruikt om wijzigingen in bestanden bij te houden en te beheren. Dit is vooral handig als je aan een project werkt met meerdere mensen, omdat het je toelaat om gemakkelijk te zien wie welke wijzigingen heeft aangebracht en om conflicterende wijzigingen op te lossen.
+            <br><br>
+            Om Git te gebruiken, moet je eerst een repository (een map waarin je projectbestanden worden opgeslagen) aanmaken op je computer. Vervolgens kun je bestanden toevoegen aan de repository en wijzigingen aanbrengen in die bestanden. Elk moment dat je wijzigingen aanbrengt, kun je deze "committen" naar de repository, wat betekent dat je de wijzigingen opslaat en er een versiehgeschiedenis van maakt. Dit maakt het gemakkelijk om terug te gaan naar een eerdere versie van een bestand als dat nodig is.
+        </p>
+        </div>
+    </div>
+        
+    <div id="terug" class="terug invis terugb"><p><i class="fa-solid fa-arrow-left"></i>Terug</p></div>     
+    <div id="tutorial" class="een box-text mx-auto origb b">
+        <div class="fakenav">
+        <div class="infakenav my-auto mx-auto"></div>   
+        </div>    
+        <h1 class="pop">Git Tutorial</h1>
+        
+        <div class="tutorialbox mx-auto invis box1">
+            <h4>Download & installeer Git</h4>
+            <p><a class="" target="_blank rel="noopener noreferrer"" href="https://git-scm.com/download/win">Download</a><a class="" href="#">Volgende</a></p>
+        </div>
+        <div class="tutorialbox mx-auto invis box2">
+            <h4>Creëer een Github account</h4>
+            <p><a class="" target="_blank rel="noopener noreferrer"" href="https://github.com/signup">Link</a><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box3">
+            <h5>
+            Maak een map in Windows voor je repository (opslag).<br><br>
+            Ga naar het mapje, klik met je rechter muisknop in de map, klik op "<b>GIT GUI</b>" en daarna "<b>Create New Repository</b>". Geef het een leuke naam en klik op "<b>Create</b>".
+            <br><br>Goed gedaan! Je hebt nu een repository aangemaakt. Nu kan je beginnen met het toevoegen van een bestand aan je repository, met als voorbeeld een tekst document.
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box4">
+            <h5>
+            Maak een tesktbestand aan met de naam "<b>Leuke Tekst</b>" in jouw aangemaakte repository.<br><br>
+            Open het tesktbestand en schrijf er iets leuks in. Gebruik als voorbeeld "<b>Mijn eerste zin</b>". Vergeet niet om het op te slaan!<br><br>
+            Ga nu terug naar het <b>GIT GUI</b> programma en klik op <b>Rescan</b>. Nu zie je jouw bestand en tekst maar pas op, het is nog niet opgeslagen in de repository!
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box5">
+            <h5>
+            Om je tesktbestand op te slaan in de repository moeten we het eerst <b>Stagen</b>.<br> Klik op <b>Stage Changed</b> in <b>GIT GUI</b> en klik ja op de prompt<br><br>
+            Nu is onze wijziging opgeslagen maar niet gecommit, dit moeten we doen zodat <b>Git</b> weet welke wijzigingen in welke bestanden wij willen opslaan (committen)<br><br>
+            Voordat we kunnen committen moeten we een notitie achterlaten over onze commit, dit doen we door in het lege vak naast <b>Rescan / Stage Changed</b> te schrijven. Schrijf bijvoorbeeld "<b>Ik heb een tekstbestand aangemaakt</b>" en klik op <b>Commit</b>.
+            <br><br>Goed gedaan! Je hebt nu je eerste commit opgeslagen!
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box6">
+            <h5>
+            Ga nu terug naar je tekstbestand en schrijf "<b>Mijn tweede zin</b>" op de tweede regel en sla het op.<br><br>
+            In <b>GIT GUI</b> klik op <b>Rescan.</b> Nu zie je jouw tweede zin samen met de eerste zin. Klik op <b>Stage Changed</b> & daarna op <b>Commit</b>
+            <br>Gebruik als commit notitie "<b>Mijn tweede zin</b>" en klik op <b>Commit</b>.<br><br>
+            Nu hebben we twee commits opgeslagen in onze repository. We kunnen nu ons bestand terugzetten naar bijvoorbeeld de eerste commit.
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box7">
+            <h5>
+            In <b>GIT GUI</b> klik op <b>Repository</b> en daarna op <b>Visualize master's History</b>, nu zie je aan de linkerkant je 2 commits staan.
+            <br><br>Klik op je eerste commit en kopieer de <b>SHA1 ID</b>, het is een regel met willekeurige letters & cijfers. Zoals dit: <b>06f8d067b12530c942e8049a433c07e122eb9cfd</b> 
+            <br><br>Deze ID is specifiek aan deze commit, elke commit heeft een ander ID. Dus als je een andere commit wilt terugzetten moet je de ID van die commit gebruiken.
+            <br><br>Ga terug naar het beginscherm van <b>GIT GUI</b> en klik bovenin op <b>Branch</b> & daarna op <b>Checkout</b>. Tevens kun je ook sneltoets <b>CTRL+O</b> gebruiken.
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box8">
+            <h5>
+            Plak de ID van je eerste commit in het vak <b>Revision Expression</b> en klik op <b>Checkout</b>. Je ziet nu dat je bestand teruggezet is naar de eerste commit.
+            <br><br>Als je jouw bestand nu opent zie je de tweede zin niet meer. Dit is erg handig als je de hele tijd fout bezig was en niet meer kan CTRL+Z'en.
+            Nu gaan we beginnen met het maken van een <b>Branch</b> (tak) in onze repository.
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box9">
+            <h5>
+            Momenteel hebben we maar 1 tak, dat is onze <b>Master</b> tak. We gaan nu een nieuwe tak maken, deze tak noemen we <b>Test</b>.
+            <br><br>Dit zou je bijvoorbeeld gebruiken om dingen uit te testen zonder dat je de master branch aanpast.
+            <br><br>Bovenin <b>GIT GUI</b> klik je op <b>Branch</b> en daarna op <b>Create</b>. Geef de nieuwe tak de naam <b>Test</b> en klik op <b>Create</b>.
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl kt mx-auto invis box10">
+            <h5>
+            Nu hebben we 2 takken, de <b>Master</b> tak en de <b>Test</b> tak. Momenteel zit je in de <b>Test</b> tak, dit kun je zien linksonderin.
+            <br>Maak nu een nieuwe zin in je tekstbestand, als voorbeeld "<b>Test Regel</b>" en sla het op. Ga terug naar <b>GIT GUI</b> en klik op <b>Rescan</b>.
+            <br><br>Klik op <b>Stage Changed</b>. Gebruik als commit notitie "<b>Test Regel</b>" en klik op <b>Commit</b>.
+            <br><br>Klik nu op <b>Branch</b> en daarna op <b>Checkout</b>, selecteer de <b>Master</b> tak en klik op <b>Checkout</b>.
+            </h5>
+            <p><a class="" href="#">Volgende</a></p> 
+        </div>
+
+        <div class="tutorialboxl mx-auto invis box11">
+            <h5>
+            Ga nu terug naar je tekstbestand, je ziet dat de test regel er niet meer is. Dit komt omdat we in de <b>Master</b> tak zitten.
+            <br><br>Dit maakt Git erg handig voor als je iets wilt uitproberen zonder de vrees dat je al jouw werk verpest.
+            <br><br>Natuurlijk werkt dit voor de meeste bestandstypen en niet alleen voor tekstbestanden, maar Git werkt het best met tektsbestanden omdat je de verschillen ook echt kunt zien.
+            <br><br>Ik hoop dat ik met deze tutorial je heb kunnen helpen met het begrijpen van Git en <br>dat je het zelf ook eens gaat proberen.<br><br>            
+           </h5>
+        </div>
+
+    </div>
+</div>
+<div id="smallscreen">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">GIT TUTORIAL</h1>
+                <h5 class="text-center">Deze tutorial is alleen beschikbaar op een groter scherm.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
